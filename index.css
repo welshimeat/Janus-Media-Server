@@ -1,0 +1,101 @@
+.header {
+    background-color: lightgrey;
+    height: 10vh;
+}
+
+.header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    margin: 0;
+}
+
+.header h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 35px;
+    margin: 0;
+}
+
+#user {
+    margin: 0;
+    background-color:#339999;
+    color:white;
+    width: 20%;
+    height: 30vh;
+    display: inline-block;
+}
+
+#chat {
+    margin: 0;
+    background-color: steelblue;
+    width: 20%;
+    height: 50vh;
+    /*float: right;*/
+    display: inline-block;
+}
+
+#main {
+    margin: 0;
+    width: 80%;
+    height: 80vh;
+    background-color: darkgrey;
+    text-align: center;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    /*overflow-y: ;*/
+}
+
+#footer {
+    margin-top: -5px;
+    background-color: antiquewhite;
+    height: 10vh;
+    clear: both;
+    overflow: hidden;
+}
+
+#header, #user, #section, #footer, #chat { text-align:center; }
+#header { line-height:70px; }
+#footer { line-height:100px; }
+/* #section { line-height: 500px; }  */ /* 이게 영상 간격 오류의 범인이었다.*/
+#user { line-height: 300px;}
+#chat { line-height: 300px; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.block {
+    border-radius: 5px; /*비디오 태두리를 둥글게*/
+    border: 1px solid black; /*비디오 태두리 선*/
+    margin: 10px; /*비디오 밖 상하좌우 여백*/
+    width: 320px;
+    height: 450px;
+    text-align: left;
+    /* overflow: hidden; */
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video {
+    width: 320px;
+    height: 200px;
+    float: left;
+}
+
+.name {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid #080808;
+    /*box-shadow: 5px 5px 5px 5px grey;*/
+    padding: 5px 10px;
+    margin: 0;
+    /*overflow: hidden;*/
+    background-color: white;
+    text-align: center;
+    width: 300px;
+}
